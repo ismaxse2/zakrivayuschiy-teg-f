@@ -15,7 +15,6 @@
     <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
   </head>
   <body class="page">
-    <div class="page__cover"></div>
     <header class="header container">
       <a href="/" class="header__logo">&lt;/HTML&gt;</a>
       <h1 class="header__title">закрывающий тег</h1>
@@ -28,10 +27,11 @@
               Фритрек и нулевой спринт: Подготовка к работе
             </h2>
             <div class="card-cover">
+              <div class="card-cover__label">&lt;/HTML&gt;</div>
               <img
                 src="./images/image.png"
                 class="card-cover__image"
-                alt="artcle-cover"
+                alt="Подготовка к работе"
               />
             </div>
             <div class="card__content">
@@ -88,10 +88,11 @@
           <article class="card">
             <h2 class="card-title">1 спринт: Я — чистый лист</h2>
             <div class="card-cover">
+              <div class="card-cover__label">&lt;/HTML&gt;</div>
               <img
                 src="./images/image.png"
                 class="card-cover__image filter-saturate"
-                alt="artcle-cover"
+                alt="Чистый лист"
               />
             </div>
             <div class="card__content">
@@ -151,10 +152,11 @@
           <article class="card">
             <h2 class="card-title">3 спринт: Обходные стратегии</h2>
             <div class="card-cover">
+              <div class="card-cover__label">&lt;/HTML&gt;</div>
               <img
                 src="./images/image.png"
                 class="card-cover__image filter-sepia"
-                alt="artcle-cover"
+                alt="Обходные стратегии"
               />
             </div>
             <div class="card__content">
@@ -211,10 +213,11 @@
           <article class="card">
             <h2 class="card-title">2 спринт: Погоня за идеалом</h2>
             <div class="card-cover">
+              <div class="card-cover__label">&lt;/HTML&gt;</div>
               <img
                 src="./images/image.png"
                 class="card-cover__image filter-hue"
-                alt="artcle-cover"
+                alt="Погоня за идеалом"
               />
             </div>
             <div class="card__content">
@@ -273,10 +276,11 @@
           <article class="card">
             <h2 class="card-title">2 спринт: О тех, кто рядом</h2>
             <div class="card-cover">
+              <div class="card-cover__label">&lt;/HTML&gt;</div>
               <img
                 src="./images/image.png"
                 class="card-cover__image filter-invert"
-                alt="artcle-cover"
+                alt="О тех, кто рядом"
               />
             </div>
             <div class="card__content">
@@ -336,10 +340,11 @@
           <article class="card">
             <h2 class="card-title">1 спринт: А если не получится?</h2>
             <div class="card-cover">
+              <div class="card-cover__label">&lt;/HTML&gt;</div>
               <img
                 src="./images/image.png"
                 class="card-cover__image filter-contrast"
-                alt="artcle-cover"
+                alt="А если не получится?"
               />
             </div>
             <div class="card__content">
@@ -396,10 +401,11 @@
           <article class="card">
             <h2 class="card-title">3 спринт: Когда опускаются руки</h2>
             <div class="card-cover">
+              <div class="card-cover__label">&lt;/HTML&gt;</div>
               <img
                 src="./images/image.png"
                 class="card-cover__image filter-blur"
-                alt="artcle-cover"
+                alt="Когда опускаются руки"
               />
             </div>
             <div class="card__content">
@@ -458,10 +464,11 @@
           <article class="card">
             <h2 class="card-title">«Сейчас я здесь»</h2>
             <div class="card-cover">
+              <div class="card-cover__label">&lt;/HTML&gt;</div>
               <img
                 src="./images/image.png"
                 class="card-cover__image filter-multiple"
-                alt="artcle-cover"
+                alt="Сейчас я здесь"
               />
             </div>
             <div class="card__content">
@@ -534,22 +541,21 @@
       </button>
     </main>
     <dialog id="dialog-id" class="dialog">
-      <div class="dialog__content">
-        <svg viewBox="0 0 39 39" class="save-button__svg">
-          <use href="svg/floppy.svg#floppy" />
-        </svg>
-        <h2 class="dialog-title">
-          Вставьте<br />
-          дискету, чтобы продолжить
-        </h2>
-      </div>
-      <button
-        class="button ok-button"
-        type="button"
-        onclick="window['dialog-id'].close();"
-      >
-        <span class="button__text">ok</span>
-      </button>
+      <form method="dialog">
+        <div class="dialog__content">
+          <svg viewBox="0 0 39 39" class="save-button__svg">
+            <use href="svg/floppy.svg#floppy" />
+          </svg>
+          <h2 class="dialog-title">
+            Вставьте<br />
+            дискету, чтобы продолжить
+          </h2>
+        </div>
+
+        <button class="button ok-button" type="submit">
+          <span class="button__text">ok</span>
+        </button>
+      </form>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>

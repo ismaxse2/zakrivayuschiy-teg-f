@@ -22,7 +22,7 @@
   }
 }
 
-.like-icon.is-liked .heart {
+.like-icon.is-liked {
   animation: heart-scale 0.3s ease-in 0.1s both;
 }
 
