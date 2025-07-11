@@ -64,6 +64,7 @@
 .card-title {
   padding-inline: 10px;
   padding-block: 4px;
+  line-height: 1.2;
   font-size: var(--font-size);
   font-variation-settings: "wght" var(--font-base-heading-weight);
 }
@@ -99,10 +100,10 @@
 .card__content {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 27px;
   padding-inline: 26px;
   padding-block: 25px;
-  line-height: 1.15;
+  line-height: 1.167;
 }
 
 .card__footer {
@@ -266,7 +267,7 @@ dialog::backdrop {
 }
 
 @supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
-  .card-cover::before {
+  .card-cover__label {
     text-shadow: none;
     -webkit-text-stroke: 1px #fff;
     text-stroke: 1px #fff;
@@ -285,7 +286,15 @@ dialog::backdrop {
   }
 
   .card-list {
-    gap: 49.5px;
+    gap: 47.5px;
+  }
+
+  .card-cover__label {
+    inset-inline-end: 13px;
+  }
+
+  .card__content {
+    line-height: 1.167;
   }
 
   .save-button {
